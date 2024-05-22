@@ -29,13 +29,14 @@ jobs:
     - name: Create Tag
       if: success()  # Only create tag if the build and tests are successful
       env:
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Correction ici
+
       run: |
         TAG_NAME="v1.0.$(date +%Y%m%d%H%M%S)"
         git config --global user.email "you@example.com"
         git config --global user.name "Your Name"
         git tag $TAG_NAME
-        git push https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} $TAG_NAME
+        git push https://${GITHUB_TOKEN}@github.com/${{ github.repository }} $TAG_NAME  # Correction ici
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
