@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.romankh3</groupId>
-     <artifactId>maven</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+     <artifactId>executable-jar</artifactId>
+    <version>1.0</version>
 
     <properties>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
