@@ -6,8 +6,7 @@ import org.apache.commons.lang3.StringUtils;
  * Main class for Maven Executable Jar.
  */
 public class ExecutableJarExample {
-    public int tets ;
-    public init var ;
+    
 
     public static final String JAVA_REPOSITORY_TEMPLATE = "executable-jar-example";
 
