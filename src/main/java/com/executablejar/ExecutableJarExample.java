@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class ExecutableJarExample {
     public int tets ;
+    public init var ;
 
     public static final String JAVA_REPOSITORY_TEMPLATE = "executable-jar-example";
 
