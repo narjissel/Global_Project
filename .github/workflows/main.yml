@@ -25,9 +25,3 @@ jobs:
 
     - name: Run unit tests
       run: mvn test
-
-    # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
-    - name: Update dependency graph
-      uses: advanced-security/maven-dependency-submission-action@v1
-      with:
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
