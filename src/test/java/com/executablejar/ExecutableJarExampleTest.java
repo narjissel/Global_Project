@@ -3,6 +3,8 @@ package com.github.romankh3.executablejar;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 /**
  * Unit-level testing for {@link ExecutableJarExample} object.
@@ -13,6 +15,12 @@ public class ExecutableJarExampleTest {
     public void shouldCreateJavaRepositoryTemplateMain() {
         ExecutableJarExample main = new ExecutableJarExample();
         assertNotNull(main);
+                // Ajout de tests supplémentaires pour valider le comportement
+        String expected = "executable-jar-example";
+        String actual = ExecutableJarExample.JAVA_REPOSITORY_TEMPLATE;
+        assertEquals(expected, actual);
+
+        
     }
 
     @Test
