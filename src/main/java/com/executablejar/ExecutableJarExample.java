@@ -6,8 +6,7 @@ import org.apache.commons.lang3.StringUtils;
  * Main class for Maven Executable Jar.
  */
 public class ExecutableJarExample {
-    public int tets ;
-    public init var ;
+    
 
     public static final String JAVA_REPOSITORY_TEMPLATE = "executable-jar-example";
 
@@ -25,4 +24,9 @@ public class ExecutableJarExample {
         }
         return String.format("Hello, %s!", name);
     }
+
+    public String concatenateStrings(String str1, String str2) {
+        return str1 + str2;
+    }
+    
 }

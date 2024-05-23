@@ -31,4 +31,12 @@ public class ExecutableJarExampleTest {
         assertEquals("Hello, World!", example.greet(""));
         assertEquals("Hello, nono!", example.greet("nono"));
     }
+
+     @Test
+    public void testConcatenateStrings() {
+        ExecutableJarExample example = new ExecutableJarExample();
+        assertEquals("HelloWorld", example.concatenateStrings("Hello", "World"));
+        assertEquals("OpenAIisAwesome", example.concatenateStrings("OpenAI", "isAwesome"));
+        assertEquals("", example.concatenateStrings("", ""));
+    }
 }
