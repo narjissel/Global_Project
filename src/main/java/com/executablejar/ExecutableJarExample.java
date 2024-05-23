@@ -17,4 +17,11 @@ public class ExecutableJarExample {
             System.out.println(String.format("Hello world, %s!",JAVA_REPOSITORY_TEMPLATE));
         }
     }
+
+      public String greet(String name) {
+        if (StringUtils.isBlank(name)) {
+            return "Hello, World!";
+        }
+        return String.format("Hello, %s!", name);
+    }
 }
